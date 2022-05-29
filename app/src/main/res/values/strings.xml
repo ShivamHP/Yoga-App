@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Yoga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="asana_name">Asana name</string>
+    <string name="savasana">Shavasana</string>
+    <string name="pose_title">Pose title</string>
+    <string name="pose_description">Pose description</string>
+    <string name="chakrasana">Chakrasana</string>
+    <string name="parvatasana">Parvatasana</string>
+    <string name="dhanurasana">Dhanurasana</string>
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_fragment_gradient"
+        tools:context=".fragments.HomeFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/yogaPoses_homeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/savasanaImg_homeFragment"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/asana_img_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/savasana"
+                app:layout_constraintEnd_toStartOf="@+id/chakrasanaImg_homeFragment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/savasanaTxt_homeFragment"
+                app:layout_constraintTop_toBottomOf="@id/savasanaImg_homeFragment"
+                app:layout_constraintStart_toStartOf="@id/savasanaImg_homeFragment"
+                app:layout_constraintEnd_toEndOf="@id/savasanaImg_homeFragment"
+                android:text="@string/savasana"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/chakrasanaImg_homeFragment"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/asana_img_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chakrasana"
+                app:layout_constraintEnd_toStartOf="@+id/parvatasanaImg_homeFragment"
+                app:layout_constraintStart_toEndOf="@id/savasanaImg_homeFragment"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chakrasanaTxt_homeFragment"
+                app:layout_constraintTop_toBottomOf="@id/chakrasanaImg_homeFragment"
+                app:layout_constraintStart_toStartOf="@id/chakrasanaImg_homeFragment"
+                app:layout_constraintEnd_toEndOf="@id/chakrasanaImg_homeFragment"
+                android:text="@string/chakrasana"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/parvatasanaImg_homeFragment"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/asana_img_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/parvatasana"
+                app:layout_constraintEnd_toStartOf="@+id/dhanurasanaImg_homeFragment"
+                app:layout_constraintStart_toEndOf="@id/chakrasanaImg_homeFragment"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/parvatasanaTxt_homeFragment"
+                app:layout_constraintTop_toBottomOf="@id/parvatasanaImg_homeFragment"
+                app:layout_constraintStart_toStartOf="@id/parvatasanaImg_homeFragment"
+                app:layout_constraintEnd_toEndOf="@id/parvatasanaImg_homeFragment"
+                android:text="@string/parvatasana"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/dhanurasanaImg_homeFragment"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/asana_img_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dhanurasana"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/parvatasanaImg_homeFragment"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dhanurasanaTxt_homeFragment"
+                app:layout_constraintTop_toBottomOf="@id/dhanurasanaImg_homeFragment"
+                app:layout_constraintStart_toStartOf="@id/dhanurasanaImg_homeFragment"
+                app:layout_constraintEnd_toEndOf="@id/dhanurasanaImg_homeFragment"
+                android:text="@string/dhanurasana"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintTop_toBottomOf="@id/yogaPoses_homeFragment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginHorizontal="15dp"
+            app:cardElevation="40dp"
+            app:cardBackgroundColor="@color/white"
+            android:backgroundTint="@null"
+            android:background="@drawable/asana_fragment_shape">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:id="@+id/poseImg_homeFragment"
+                    android:src="@drawable/savasana"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/asana_fragment_shape"
+                />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:hint="@string/pose_title"
+                    android:id="@+id/titleTxt_homeFragment"
+                    android:textSize="24sp"
+                    android:textColor="@color/primary_color"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="8dp"
+                        android:hint="@string/pose_description"
+                        android:id="@+id/descriptionText_homeFragment"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
